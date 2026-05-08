@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="text">Hello World</p>
+<img id="img" src="my_image.jpg" height="100" width="100">
+
+<br><br>
+
+<button onclick="changeContent()">Change Content</button>
+
+<script>
+function changeContent() {
+    document.getElementById("text").innerHTML = "Text Changed!";
+    document.getElementById("img").src = "image2.jpg";
+    document.getElementById("img").height = "150";
+    document.getElementById("img").width = "150";
+}
+</script>
+
+</body>
+</html>

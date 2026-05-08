@@ -1,0 +1,26 @@
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+}
+
+/* ID selector */
+#special {
+    color: red;
+    font-weight: bold;
+}
+
+/* Class selector */
+.box {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}

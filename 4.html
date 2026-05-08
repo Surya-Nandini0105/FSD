@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Student Object</h3>
+
+Name: <input id="name"><br><br>
+Marks: <input id="marks" type="number"><br><br>
+
+<button onclick="createStudent()">Submit</button>
+
+<p id="output"></p>
+
+<script>
+// Constructor
+function Student(name, marks) {
+    this.name = name;
+    this.marks = marks;
+
+    // Method
+    this.show = function() {
+        return this.name + " scored " + this.marks;
+    };
+
+    // Accessor
+    Object.defineProperty(this, "grade", {
+        get: function() {
+            return this.marks >= 50 ? "Pass" : "Fail";
+        }
+    });
+}
+
+function createStudent() {
+    let n = document.getElementById("name").value;
+    let m = document.getElementById("marks").value;
+
+    let s = new Student(n, m);
+
+    document.getElementById("output").innerHTML =
+        s.show() + "<br>Grade: " + s.grade;
+}
+</script>
+
+</body>
+</html>

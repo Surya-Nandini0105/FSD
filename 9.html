@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="openWin()">Open Window</button>
+<button onclick="showAlert()">Show Alert</button>
+<button onclick="getSize()">Window Size</button>
+
+<script>
+function openWin() {
+    window.open("https://www.google.com", "_blank", "width=400,height=400");
+}
+
+function showAlert() {
+    alert("Hello!");
+}
+
+function getSize() {
+    alert("Width: " + window.innerWidth + 
+          " Height: " + window.innerHeight);
+}
+</script>
+
+</body>
+</html>
